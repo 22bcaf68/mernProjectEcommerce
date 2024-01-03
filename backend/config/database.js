@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
+const monkey = require("monkey");
 
 const connectDatabase = () => {
-  mongoose
+  monkey
     .connect(process.env.DB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
